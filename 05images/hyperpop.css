@@ -1,0 +1,184 @@
+body {
+    font-family: "Orbitron", sans-serif;
+    background-color: lightgrey;
+    color: #343232;
+}
+
+#index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Press Start 2P", system-ui;
+}
+
+h1 {
+    font-family: "Press Start 2P", system-ui;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+/* header goes here */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+#index h1 {
+    font-size: 10rem;
+    margin: 2rem;
+}
+
+#index h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.cover-page-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 75%;
+    gap: 30px;
+}
+
+/* nav goes here */
+
+nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.home-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20vw;
+    margin-left: -2rem;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 10px solid #343232;
+    border-radius: 50%;
+    height: 6.3rem;
+    width: 13.5rem;
+    font-size: 1.6rem;
+    color: #343232;
+}
+
+nav .active {
+    font-weight: 900;
+    color: white;
+}
+
+nav a:hover {
+    color: white;
+}
+
+#explore {
+    background-color: #bff218;
+}
+
+#merch {
+    align-self: flex-end;
+    background-color: #fd61f1;
+}
+
+#tours {
+    align-self: center;
+    background-color: #467cf9;
+}
+
+#news {
+    align-self: flex-end;
+    background-color: #17f9a6;
+}
+
+/* main goes here */
+
+img {
+    height: 35rem;
+    width: 50rem;
+}
+
+.explore-main {
+    margin-left: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: #343232;
+}
+
+a:hover {
+    color: white;
+}
+.explore-main figure {
+    float: right;
+    width: 30%;
+}
+
+.explore-main img {
+    width: 100%;
+    height: auto;
+}
+
+.explore-main dl {
+    padding: 1rem 0px;
+}
+
+.explore-main dl dt {
+    font-weight: 700;
+    padding: .8rem;
+}
+
+.explore-main ul {
+    list-style-type:circle;
+    margin: 2rem;
+}
+
+li {
+    padding: .8rem;
+}
+
+.explore-main p {
+    color: #467cf9;
+}
+
+.merch-main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.merch-main figure img {
+    height: 315px;
+    width: 450px;
+}
+
+/* footer goes here */
+
+footer {
+    clear: both;
+}
+
+footer address {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.home-footer address {
+    margin: 1rem;
+}
