@@ -1,0 +1,442 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Orbitron", sans-serif;
+    background-color: lightgrey;
+    color: #343232;
+}
+
+#index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Press Start 2P", system-ui;
+    margin: 0;
+}
+
+#tours-body {
+    background-image: url("./images/orby.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+    font-family: "Press Start 2P", system-ui;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+/* header goes here */
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    margin-right: 45%;
+}
+
+header img.logo {
+    width: 200px;
+    height: auto;
+}
+
+.home-header {
+    flex-direction: column;
+    margin: 0 0 25px 0;
+}
+
+#index h1 {
+    font-size: 10rem;
+    margin: 2rem;
+}
+
+#index h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.cover-page-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 75%;
+    gap: 30px;
+}
+
+/* nav goes here */
+nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .active {
+    font-weight: 900;
+    color: white;
+}
+
+nav a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#explore {
+    background-image: linear-gradient(#bff218,#647f0d );
+}
+
+#merch {
+    align-self: flex-end;
+    background-image: linear-gradient(#fd61f1,#92398b );
+}
+
+#tours {
+    align-self: center;
+    background-image: linear-gradient(#467cf9, #2c4e9e );
+}
+
+#news {
+    align-self: flex-end;
+    background-image: linear-gradient(#17f9a6,#0e9966 );
+}
+
+
+@media only screen and (max-width: 768px) {
+    #index {
+        display: flex;
+        align-items: center;
+    }
+    #index h1 {
+        font-size: 3rem;
+    }
+    #index h2 {
+        font-size: 1.3rem;
+    }
+    
+    #index .cover-page-content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #index .home-img {
+        width: 65vw;
+        height: auto;
+    }
+    
+    #index nav {
+        font-size: 32px;
+    }
+
+    #index nav a {
+        padding: 3px 10px;
+        border-radius: 15px;
+    }
+    
+    
+    nav {
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
+    #tours-body {
+        background-size: 400%;
+        background-repeat:repeat-y;
+    }
+    
+    .tours-main label {
+        flex-direction: column;
+    }
+    
+    #merch {
+        align-self: center;
+    }
+    
+    #tours {
+        align-self: center;
+    }
+    
+    #news {
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    header img.logo {
+        width: 100px;
+    }
+
+    #index h1 {
+        font-size: 2rem;
+    }
+    #index h2 {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    
+    nav.home-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 20vw;
+        margin-left: -2rem;
+    }
+    
+    nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border: 10px solid #343232;
+        border-radius: 50%;
+        height: 6.3rem;
+        width: 13.5rem;
+        font-size: 1.6rem;
+        color: #343232;
+    }
+    
+    
+    
+}
+
+/* main goes here */
+
+img {
+    height: 35rem;
+    width: 50rem;
+}
+
+a {
+    text-decoration: none;
+    color: #343232;
+}
+
+a:hover {
+    color: white;
+    cursor: pointer;
+}
+.explore-main figure {
+    float: right;
+    width: 30%;
+}
+
+.explore-main img {
+    width: 100%;
+    height: auto;
+}
+
+.explore-main dl {
+    padding: 1rem 0px;
+}
+
+.explore-main dl dt {
+    font-weight: 700;
+    padding: .8rem;
+}
+
+.explore-main ul {
+    list-style-type:circle;
+    margin: 2rem;
+}
+
+li {
+    padding: .8rem;
+}
+
+.explore-main p {
+    color: #467cf9;
+}
+
+.merch-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.merch-main figure img {
+    height: 315px;
+    width: 450px;
+}
+
+.merch-main figure img:hover {
+    box-shadow: 0px 0px 30px #343232;
+}
+
+.tours-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tours-main form {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    align-items: center;
+}
+
+.tours-main fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 9px;
+    border: 10px solid #343232;
+}
+
+.tours-main legend {
+    font-size: 1.6rem;
+}
+.tours-main label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-left: 25px;
+}
+.tours-main label.checkbox {
+    justify-content: flex-start;
+}
+
+.tours-main input, textarea, select {
+    border-radius: 15px;
+    padding-left: 5px;
+    border: 1px solid #343232;
+    outline: 2px solid #343232;
+    background-color: rgb(247, 229, 231);
+    color: rgb(9, 111, 9);
+}
+
+.tours-main input[type=radio], input[type=checkbox] {
+    outline: none;
+    background-color: rgb(247, 229, 231);
+}
+
+.tours-main .special-label {
+    margin: 30px 0px;
+    width: 100%;
+}
+
+.tours-main textarea {
+    width: 300px;
+    height: 50px;
+}
+
+.tours-main .submit-btn {
+    width: 100px;
+    padding: 5px;
+    background-color: #343232;
+    color: white;
+}
+
+.tours-main .submit-btn:hover {
+    cursor: pointer;
+}
+
+.tours-main .to-contact {
+    align-self: flex-start;
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+
+.thanks-main {
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.thanks-main h1 {
+    font-size: 60px;
+}
+
+.thanks-main img {
+    width: 300px;
+    height: auto;
+}
+
+.news-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-main img {
+    width: 100%;
+    height: auto;
+}
+
+.news-main h1 {
+    text-align: center;
+    margin: 45px 0px;
+}
+
+.news-main table {
+    width: 100%;
+    margin-bottom: 45px;
+    color: #343232;
+    border-collapse: collapse;
+    border: 1px solid #343232;
+}
+
+.news-main th {
+    padding: .8rem 1vw;
+    text-align: left;
+    background-color: rgba(34, 32, 32, 0.2);
+}
+
+.news-main td {
+    padding: .7rem 1vw;
+}
+
+.news-main tr:nth-child(odd) {
+    background-color: rgba(34, 32, 32, 0.2);
+}
+
+.news-main tr:hover {
+    background-color: rgba(17, 249, 166, 0.2);
+}
+
+.news-main tr:nth-child(1) {
+    background-color: rgba(34, 32, 32, 0.4);
+}
+/* footer goes here */
+
+footer {
+    clear: both;
+}
+
+footer address {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.home-footer address {
+    margin: 1rem;
+}
+
+footer img.logo {
+    width: 100px;
+    height: auto;
+}
+
+header, nav, main, footer {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+nav {
+    margin-bottom: 25px;
+}
